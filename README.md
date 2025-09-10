@@ -1,100 +1,143 @@
----
-
 # 🧹 Missing Data Cleaner
 
-An interactive **Streamlit app** to detect and clean missing values in your dataset.
+An interactive **Streamlit application** for detecting and cleaning missing values in CSV datasets.
 
-It provides:
+## ✨ Features
 
-* 📂 **CSV Upload** from the sidebar
-* 🔍 **Missing Values Summary (Table + Chart)**
-* ⚖️ **Fill Missing Values with Mean / Median / Mode (numeric columns)**
-* 📝 **Fill Categorical Columns with Mode**
-* 👀 **Preview Cleaned Dataset**
-* 💾 **Download Cleaned CSV File**
+- 📂 **CSV File Upload** - Easy file upload through sidebar interface
+- 🔍 **Missing Data Analysis** - Comprehensive summary with tables and visualizations
+- ⚖️ **Smart Data Imputation** - Fill missing numeric values with mean, median, or mode
+- 📝 **Categorical Data Handling** - Fill missing categorical values with mode
+- 👀 **Data Preview** - View your cleaned dataset before download
+- 💾 **Export Functionality** - Download cleaned data as CSV
 
----
+## 📋 Requirements
 
-## 📂 Required CSV Format
+- Python 3.7+
+- Required packages listed in `requirements.txt`
 
-Your file **must have structured columns** (any schema is supported, missing values will be cleaned).
+## 📊 Supported Data Format
 
-Example:
+The application accepts CSV files with any column structure. Both numeric and categorical columns are supported.
+
+**Example dataset:**
 
 | Name   | Age | Salary | Department  |
-| ------ | --- | ------ | ----------- |
+|--------|-----|--------|-------------|
 | Ravi   | 28  | NaN    | Sales       |
 | Meena  | NaN | 45000  | Engineering |
 | Kumar  | 30  | 50000  | NaN         |
 | Anita  | 27  | 52000  | Engineering |
 | Suresh | NaN | NaN    | NaN         |
 
-* **Supports both numeric & categorical columns**
-* Missing values will be handled according to your chosen strategy
+## 🚀 Installation & Setup
 
----
-
-## ⚙️ Setup & Run Instructions
-
-### 1️⃣ Clone or Download Project
+### 1. Clone the Repository
 
 ```bash
-git clone <your-repo-link>
-cd <project-folder>
+git clone <repository-url>
+cd missing-data-cleaner
 ```
 
-### 2️⃣ Install Python and pip
+### 2. Verify Python Installation
 
-Download the latest stable Python 3 installer from [python.org](https://www.python.org/downloads/).
-
-* Check **Add python.exe to PATH** during installation
-* Ensure **pip** is selected
-* Verify installation:
+Ensure you have Python 3.7+ installed:
 
 ```bash
 python --version
 pip --version
 ```
 
-### 3️⃣ Create Virtual Environment
+If Python is not installed, download it from [python.org](https://www.python.org/downloads/).
 
-Inside your project folder, run:
-
-```bash
-python -m venv .venv
-```
-
-This will create a folder `.venv` containing an isolated Python environment.
-
-### 4️⃣ Activate Virtual Environment
-
-* **Windows (Command Prompt / PowerShell):**
+### 3. Create Virtual Environment
 
 ```bash
-.venv\Scripts\activate
+python -m venv venv
 ```
 
-* **Windows (Git Bash) / Linux / MacOS:**
+### 4. Activate Virtual Environment
 
+**Windows:**
 ```bash
-source .venv/Scripts/activate
+# Command Prompt
+venv\Scripts\activate
+
+# PowerShell
+venv\Scripts\Activate.ps1
+
+# Git Bash
+source venv/Scripts/activate
 ```
 
-You’ll know it’s active when you see `(.venv)` at the start of your terminal line.
+**macOS/Linux:**
+```bash
+source venv/bin/activate
+```
 
-### 5️⃣ Install Required Packages
+You should see `(venv)` in your terminal prompt when the environment is active.
+
+### 5. Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 6️⃣ Run the App
+### 6. Run the Application
 
 ```bash
 streamlit run app.py
 ```
 
-Your browser will open the Streamlit interface where you can upload your CSV and clean missing data interactively.
+The application will automatically open in your default web browser at `http://localhost:8501`.
+
+## 📝 Usage
+
+1. **Upload CSV File** - Use the sidebar file uploader
+2. **Analyze Missing Data** - Review the missing data summary and visualizations
+3. **Choose Cleaning Strategy** - Select appropriate imputation methods for different column types
+4. **Preview Results** - Examine the cleaned dataset
+5. **Download** - Export your cleaned data as a CSV file
+
+## 🛠️ Dependencies
+
+Create a `requirements.txt` file with the following packages:
+
+```
+streamlit>=1.28.0
+pandas>=1.5.0
+numpy>=1.24.0
+matplotlib>=3.6.0
+seaborn>=0.12.0
+```
+
+## 📁 Project Structure
+
+```
+missing-data-cleaner/
+├── app.py                 # Main Streamlit application
+├── requirements.txt       # Python dependencies
+├── README.md             # Project documentation
+└── venv/                 # Virtual environment (created after setup)
+```
+
+## 🔧 Troubleshooting
+
+**Common Issues:**
+
+- **Port already in use:** Run `streamlit run app.py --server.port 8502` to use a different port
+- **Module not found:** Ensure your virtual environment is activated and dependencies are installed
+- **File upload errors:** Check that your CSV file is properly formatted and not corrupted
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
 
 ---
 
+**Happy Data Cleaning! 🎉**
