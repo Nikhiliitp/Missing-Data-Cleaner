@@ -119,13 +119,6 @@ missing-data-cleaner/
 └── venv/                 # Virtual environment (created after setup)
 ```
 
-## 🔧 Troubleshooting
-
-**Common Issues:**
-
-- **Port already in use:** Run `streamlit run app.py --server.port 8502` to use a different port
-- **Module not found:** Ensure your virtual environment is activated and dependencies are installed
-- **File upload errors:** Check that your CSV file is properly formatted and not corrupted
 
 ## 🤝 Contributing
 
