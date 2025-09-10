@@ -103,23 +103,4 @@ streamlit run app.py
 ✅ Open the provided **localhost URL** in your browser to start using the app.
 
 
----
 
-## 📸 Screenshots
-
-### 🔹 Upload Dataset & Preview
-
-![Upload Dataset](<img width="1909" height="920" alt="Screenshot 2025-09-10 184457" src="https://github.com/user-attachments/assets/ee7dae1c-7db8-48a0-9d39-eddb5ef2d058" />
-)
-
-### 🔹 Missing Values Summary & Chart
-
-![Missing Values](<img width="1918" height="917" alt="Screenshot 2025-09-10 184544" src="https://github.com/user-attachments/assets/9537b6bf-9798-48ff-910b-ab87cc11f2a0" />
-)
-
-### 🔹 Cleaned Dataset Preview & Download Option
-
-![Cleaned Dataset](<img width="1909" height="918" alt="Screenshot 2025-09-10 184605" src="https://github.com/user-attachments/assets/0a7c9acf-480f-4a33-b7a0-fd08fe6c6918" />
-)
-
----
