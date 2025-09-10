@@ -89,7 +89,7 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 
-The application will automatically open in your default web browser at `http://localhost:8501`.
+The application will automatically open in your default web browser.
 
 ## 📝 Usage
 
@@ -104,11 +104,9 @@ The application will automatically open in your default web browser at `http://l
 Create a `requirements.txt` file with the following packages:
 
 ```
-streamlit>=1.28.0
-pandas>=1.5.0
-numpy>=1.24.0
-matplotlib>=3.6.0
-seaborn>=0.12.0
+streamlit
+pandas
+matplotlib
 ```
 
 ## 📁 Project Structure
@@ -137,6 +135,13 @@ missing-data-cleaner/
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
+## 📄 License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## 📞 Support
+
+If you encounter any issues or have questions, please open an issue in the repository or contact the maintainer.
 
 ---
 
