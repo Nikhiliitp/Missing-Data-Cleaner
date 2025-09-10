@@ -135,14 +135,6 @@ missing-data-cleaner/
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## 📄 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## 📞 Support
-
-If you encounter any issues or have questions, please open an issue in the repository or contact the maintainer.
-
 ---
 
 **Happy Data Cleaning! 🎉**
